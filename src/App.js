@@ -1,25 +1,38 @@
-import logo from './logo.svg';
+import { useState, useEffect } from 'react';
 import './App.css';
 
-function App() {
+import React from 'react';
+import { CardList } from './components/card-list/card-list';
+import { SearchBox } from './components/search-box/search-box';
+
+const App = () => {
+  const [citizens, setCitizens] = useState([]);
+  const [search, setSearch] = useState('');
+
+  const filteredCitizens = citizens.filter((citizen) =>
+    citizen.name.toLowerCase().includes(search.toLowerCase())
+  );
+
+  const handleChange = (e) => {
+    setSearch(e.target.value);
+  };
+
+  useEffect(() => {
+    fetch('https://jsonplaceholder.typicode.com/users')
+      .then((res) => res.json())
+      .then((users) => setCitizens(users));
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <h1 className='title'>Strangetown Citizens</h1>
+      <SearchBox
+        placeholder='Search for citizen!'
+        handleChange={handleChange}
+      />
+      <CardList citizens={filteredCitizens} />
     </div>
   );
-}
+};
 
 export default App;

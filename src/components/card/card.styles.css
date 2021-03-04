@@ -1,0 +1,10 @@
+.card {
+  background-color: rgba(141, 78, 78, 0.5);
+  border-radius: 5px;
+  transition: transform 0.2s linear;
+  color: white;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
