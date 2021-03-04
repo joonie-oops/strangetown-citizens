@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/stragetown-citizens/static/css/main.fb2b6668.chunk.css",
+    "main.js": "/stragetown-citizens/static/js/main.2409cd0b.chunk.js",
+    "main.js.map": "/stragetown-citizens/static/js/main.2409cd0b.chunk.js.map",
+    "runtime-main.js": "/stragetown-citizens/static/js/runtime-main.1f83f078.js",
+    "runtime-main.js.map": "/stragetown-citizens/static/js/runtime-main.1f83f078.js.map",
+    "static/js/2.f3eb17d0.chunk.js": "/stragetown-citizens/static/js/2.f3eb17d0.chunk.js",
+    "static/js/2.f3eb17d0.chunk.js.map": "/stragetown-citizens/static/js/2.f3eb17d0.chunk.js.map",
+    "static/js/3.8dd36a71.chunk.js": "/stragetown-citizens/static/js/3.8dd36a71.chunk.js",
+    "static/js/3.8dd36a71.chunk.js.map": "/stragetown-citizens/static/js/3.8dd36a71.chunk.js.map",
+    "index.html": "/stragetown-citizens/index.html",
+    "static/css/main.fb2b6668.chunk.css.map": "/stragetown-citizens/static/css/main.fb2b6668.chunk.css.map",
+    "static/js/2.f3eb17d0.chunk.js.LICENSE.txt": "/stragetown-citizens/static/js/2.f3eb17d0.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1f83f078.js",
+    "static/js/2.f3eb17d0.chunk.js",
+    "static/css/main.fb2b6668.chunk.css",
+    "static/js/main.2409cd0b.chunk.js"
+  ]
+}
